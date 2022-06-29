@@ -30,6 +30,13 @@ img {
 /* Color Pallete Variables */
 /* Font Weight Variables */
 /* Media Queries Variables */
+body {
+  font-family: ff-rubik;
+  font-size: 1.8rem;
+  height: 100vh;
+  background-color: hsl(226deg, 43%, 10%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

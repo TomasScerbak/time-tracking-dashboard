@@ -1,7 +1,14 @@
-@use "./typography";
-@use "./resets";
-@use "./functions";
-@use "./variables";
+@import "./typography";
+@import "./resets";
+@import "./functions";
+@import "./variables";
+
+body {
+  font-family: ff-rubik;
+  font-size: 1.8rem;
+  height: 100vh;
+  background-color: $very-dark-blue;
+}
 
 .attribution {
   font-size: 11px;
