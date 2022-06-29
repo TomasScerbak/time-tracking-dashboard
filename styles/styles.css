@@ -37,6 +37,18 @@ body {
   background-color: hsl(226deg, 43%, 10%);
 }
 
+h1 {
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

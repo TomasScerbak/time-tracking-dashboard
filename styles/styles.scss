@@ -10,6 +10,16 @@ body {
   background-color: $very-dark-blue;
 }
 
+h1 {
+  color: white;
+}
+
+// Container
+.container {
+  height: 100vh;
+  @include flexCenter(column);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
