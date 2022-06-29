@@ -1,3 +1,8 @@
+@use "./typography";
+@use "./resets";
+@use "./functions";
+@use "./variables";
+
 .attribution {
   font-size: 11px;
   text-align: center;

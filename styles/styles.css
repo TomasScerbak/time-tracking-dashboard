@@ -1,3 +1,35 @@
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Lists */
+li {
+  list-style: none;
+}
+
+/* Images */
+img {
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Color Pallete Variables */
+/* Font Weight Variables */
+/* Media Queries Variables */
 .attribution {
   font-size: 11px;
   text-align: center;
