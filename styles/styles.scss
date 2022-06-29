@@ -6,28 +6,51 @@
 body {
   font-family: ff-rubik;
   font-size: 1.8rem;
-  height: 100vh;
+  height: 100%;
   background-color: $very-dark-blue;
-  margin: 8.1rem 2.4rem 8.1rem;
+  margin: 8.1rem 2.4rem;
 }
 
 // Container
 .container {
   @include flexCenter(column);
+  height: 100vh;
 }
 
 // Grid
 .grid {
   display: grid;
   gap: 2.4rem;
+
+  @media screen and (min-width: $x-small) {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    .box--one {
+      grid-column: 1 / 3;
+      margin: auto;
+    }
+  }
+
+  @media screen and (min-width: $medium) {
+    grid-template-columns: repeat(4, 1fr);
+
+    .box--one {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      margin: auto;
+      height: 100%;
+    }
+  }
 }
 
 // Grid boxes
 .box {
   background-color: white;
-  width: 32.7rem;
-  height: 16rem;
+  width: 20rem;
+  height: auto;
   border: 1px solid black;
+  margin: auto;
 }
 
 .attribution {
