@@ -35,18 +35,26 @@ body {
   font-size: 1.8rem;
   height: 100vh;
   background-color: hsl(226deg, 43%, 10%);
-}
-
-h1 {
-  color: white;
+  margin: 8.1rem 2.4rem 8.1rem;
 }
 
 .container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.box {
+  background-color: white;
+  width: 32.7rem;
+  height: 16rem;
+  border: 1px solid black;
 }
 
 .attribution {

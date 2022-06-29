@@ -8,16 +8,26 @@ body {
   font-size: 1.8rem;
   height: 100vh;
   background-color: $very-dark-blue;
-}
-
-h1 {
-  color: white;
+  margin: 8.1rem 2.4rem 8.1rem;
 }
 
 // Container
 .container {
-  height: 100vh;
   @include flexCenter(column);
+}
+
+// Grid
+.grid {
+  display: grid;
+  gap: 2.4rem;
+}
+
+// Grid boxes
+.box {
+  background-color: white;
+  width: 32.7rem;
+  height: 16rem;
+  border: 1px solid black;
 }
 
 .attribution {
