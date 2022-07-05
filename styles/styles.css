@@ -101,6 +101,7 @@ body {
 .box--profile {
   height: 20.3rem;
   width: 32.7rem;
+  z-index: 1;
 }
 .box--profile .box__heading {
   display: flex;
@@ -160,10 +161,10 @@ body {
   position: absolute;
   width: 100%;
   height: 8rem;
-  z-index: -1;
   bottom: 3%;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  z-index: -1;
 }
 @media screen and (min-width: 1199.98px) {
   .box--profile .box__footer {
@@ -172,6 +173,8 @@ body {
     align-items: flex-start;
     bottom: 0%;
     height: 18rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }
 .box--profile .box__footer .period {
