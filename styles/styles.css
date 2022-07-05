@@ -31,7 +31,7 @@ img {
 /* Font Weight Variables */
 /* Media Queries Variables */
 body {
-  font-family: ff-rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 1.8rem;
   height: 100vh;
   background-color: hsl(226deg, 43%, 10%);
@@ -100,9 +100,9 @@ body {
 }
 .box--profile .box__heading {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   background-color: hsl(246deg, 80%, 60%);
   overflow: hidden;
   padding: 3.5rem;
@@ -147,10 +147,11 @@ body {
   }
 }
 .box--profile .box__footer {
-  padding-top: 2.4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
+  padding-top: 2.4rem;
   background-color: hsl(235deg, 46%, 20%);
   position: absolute;
   width: 100%;
@@ -228,9 +229,9 @@ body {
 }
 .box--feature .box__body--children {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   padding: 2.8rem 2.4rem;
   background-color: hsl(235deg, 46%, 20%);
   position: absolute;
@@ -263,9 +264,9 @@ body {
 }
 .box--feature .box__body--children .box__left {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   width: 100%;
   margin-bottom: 0.6rem;
 }
@@ -281,9 +282,9 @@ body {
 }
 .box--feature .box__body--children .box__right {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   width: 100%;
 }
 .box--feature .box__body--children .box__right .last__week {
