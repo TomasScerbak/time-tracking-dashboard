@@ -41,9 +41,15 @@ body {
 .container {
   height: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+}
+@media screen and (min-width: 1199.98px) {
+  .container {
+    width: auto;
+    height: 51.8rem;
+  }
 }
 
 .grid {
@@ -51,8 +57,10 @@ body {
   gap: 2.4rem;
   border-radius: 15px;
   overflow: hidden;
+  justify-items: center;
+  align-items: center;
 }
-@media screen and (min-width: 575.98px) {
+@media screen and (min-width: 767.98px) {
   .grid {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
@@ -63,9 +71,10 @@ body {
     margin: auto;
   }
 }
-@media screen and (min-width: 991.98px) {
+@media screen and (min-width: 1199.98px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25.5rem);
+    gap: 3rem;
   }
   .grid .box--profile {
     grid-column: 1/2;
@@ -97,12 +106,27 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+@media screen and (min-width: 1199.98px) {
+  .box--profile .box__heading {
+    width: 25.5rem;
+    border-radius: 15px;
+    height: 68%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
 .box--profile .box__heading .profile__picture {
   width: 6.4rem;
   height: 6.4rem;
   border-radius: 100%;
   border: 2px solid white;
   margin-right: 2rem;
+}
+@media screen and (min-width: 1199.98px) {
+  .box--profile .box__heading .profile__picture {
+    margin-bottom: 2rem;
+  }
 }
 .box--profile .box__heading .report {
   font-size: 1.5rem;
@@ -114,8 +138,13 @@ body {
   font-weight: 300;
   color: white;
 }
+@media screen and (min-width: 1199.98px) {
+  .box--profile .box__heading .user {
+    font-size: 4rem;
+  }
+}
 .box--profile .box__footer {
-  padding: 2.4rem;
+  padding-top: 2.4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -127,14 +156,35 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+@media screen and (min-width: 1199.98px) {
+  .box--profile .box__footer {
+    width: 25.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 7%;
+  }
+}
 .box--profile .box__footer .period {
-  color: white;
+  color: hsl(235deg, 45%, 61%);
   padding-left: 1rem;
+}
+@media screen and (min-width: 1199.98px) {
+  .box--profile .box__footer .period {
+    margin-bottom: 1.7rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .box--feature {
   width: 32.7rem;
   height: 16rem;
+}
+@media screen and (min-width: 1199.98px) {
+  .box--feature {
+    width: 25.5rem;
+    height: 24.4rem;
+  }
 }
 .box--feature .box__top {
   height: auto;
@@ -147,6 +197,11 @@ body {
   position: relative;
   left: 23rem;
   top: -1rem;
+}
+@media screen and (min-width: 1199.98px) {
+  .box--feature .box__top .work__image {
+    left: 17rem;
+  }
 }
 .box--feature .box__work {
   background-color: hsl(15deg, 100%, 70%);
@@ -168,44 +223,64 @@ body {
 }
 .box--feature .box__body--children {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 2.8rem 2.4rem;
   background-color: hsl(235deg, 46%, 20%);
   position: absolute;
   width: 100%;
+  height: auto;
   top: 18%;
   z-index: 1;
   border-radius: 15px;
 }
+.box--feature .box__body--children .settings {
+  width: 2.1rem;
+  height: 0.5rem;
+  cursor: pointer;
+}
+.box--feature .box__body--children .hours {
+  font-size: 3.2rem;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+@media screen and (min-width: 1199.98px) {
+  .box--feature .box__body--children .hours {
+    font-size: 5.6rem;
+  }
+}
 .box--feature .box__body--children .box__left {
-  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.6rem;
 }
 .box--feature .box__body--children .box__left .type {
   font-size: 1.8rem;
   color: white;
   font-weight: 400;
 }
-.box--feature .box__body--children .box__left .hours {
-  font-size: 3.2rem;
-  color: white;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-}
 .box--feature .box__body--children .box__right {
-  text-align: right;
-}
-.box--feature .box__body--children .box__right .settings {
-  width: 2.1rem;
-  height: 0.5rem;
-  margin-bottom: 1.6rem;
-  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .box--feature .box__body--children .box__right .last__week {
   font-size: 1.5rem;
   color: white;
   font-size: 400;
+}
+@media screen and (min-width: 1199.98px) {
+  .box--feature .box__body--children .box__right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .attribution {

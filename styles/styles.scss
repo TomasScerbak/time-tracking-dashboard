@@ -13,10 +13,12 @@ body {
 
 .container {
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(row);
+
+  @media screen and(min-width: $large) {
+    width: auto;
+    height: 51.8rem;
+  }
 }
 
 // Grid
@@ -25,8 +27,10 @@ body {
   gap: 2.4rem;
   border-radius: 15px;
   overflow: hidden;
+  justify-items: center;
+  align-items: center;
 
-  @media screen and (min-width: $x-small) {
+  @media screen and (min-width: $small) {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     border-radius: 15px;
@@ -37,8 +41,9 @@ body {
     }
   }
 
-  @media screen and (min-width: $medium) {
-    grid-template-columns: repeat(4, 1fr);
+  @media screen and (min-width: $large) {
+    grid-template-columns: repeat(4, 25.5rem);
+    gap: 3rem;
 
     .box--profile {
       grid-column: 1 / 2;
@@ -73,12 +78,25 @@ body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
+    @media screen and (min-width: $large) {
+      width: 25.5rem;
+      border-radius: 15px;
+      height: 68%;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+    }
+
     .profile__picture {
       width: 6.4rem;
       height: 6.4rem;
       border-radius: 100%;
       border: 2px solid white;
       margin-right: 2rem;
+
+      @media screen and (min-width: $large) {
+        margin-bottom: 2rem;
+      }
     }
 
     .report {
@@ -91,11 +109,15 @@ body {
       font-size: 2.4rem;
       font-weight: weight(light);
       color: white;
+
+      @media screen and (min-width: $large) {
+        font-size: 4rem;
+      }
     }
   }
 
   .box__footer {
-    padding: 2.4rem;
+    padding-top: 2.4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,9 +129,22 @@ body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
+    @media screen and (min-width: $large) {
+      width: 25.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+      bottom: 7%;
+    }
+
     .period {
-      color: white;
+      color: $desaturated-blue;
       padding-left: 1rem;
+
+      @media screen and (min-width: $large) {
+        margin-bottom: 1.7rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+      }
     }
   }
 }
@@ -118,6 +153,11 @@ body {
 .box--feature {
   width: 32.7rem;
   height: 16rem;
+
+  @media screen and (min-width: $large) {
+    width: 25.5rem;
+    height: 24.4rem;
+  }
 
   .box__top {
     height: auto;
@@ -130,6 +170,10 @@ body {
       position: relative;
       left: 23rem;
       top: -1rem;
+
+      @media screen and (min-width: $large) {
+        left: 17rem;
+      }
     }
   }
 
@@ -154,48 +198,66 @@ body {
 
   .box__body--children {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 2.8rem 2.4rem;
     background-color: $dark-blue;
     position: absolute;
     width: 100%;
+    height: auto;
     top: 18%;
     z-index: 1;
     border-radius: 15px;
 
+    .settings {
+      width: 2.1rem;
+      height: 0.5rem;
+      cursor: pointer;
+    }
+
+    .hours {
+      font-size: 3.2rem;
+      color: white;
+      font-weight: weight(light);
+      letter-spacing: 0.1rem;
+
+      @media screen and (min-width: $large) {
+        font-size: 5.6rem;
+      }
+    }
+
     .box__left {
-      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 0.6rem;
 
       .type {
         font-size: 1.8rem;
         color: white;
         font-weight: weight(regular);
       }
-
-      .hours {
-        font-size: 3.2rem;
-        color: white;
-        font-weight: weight(light);
-        letter-spacing: 0.1rem;
-      }
     }
 
     .box__right {
-      text-align: right;
-
-      .settings {
-        width: 2.1rem;
-        height: 0.5rem;
-        margin-bottom: 1.6rem;
-        cursor: pointer;
-      }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
 
       .last__week {
         font-size: 1.5rem;
         color: white;
         font-size: weight(regular);
+      }
+
+      @media screen and (min-width: $large) {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   }
