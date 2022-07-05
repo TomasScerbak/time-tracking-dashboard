@@ -18,6 +18,11 @@ body {
   }
 }
 
+// Utility class
+.active {
+  color: white;
+}
+
 .container {
   @include flexCenter(column);
 }
@@ -138,7 +143,8 @@ body {
 
     .period {
       color: $desaturated-blue;
-      padding-left: 1rem;
+      padding-left: 5rem;
+      cursor: pointer;
 
       @media screen and (min-width: $large) {
         margin-bottom: 2.1rem;
@@ -207,6 +213,10 @@ body {
     z-index: 1;
     border-radius: 15px;
 
+    &:hover {
+      background-color: $desaturated-blue;
+    }
+
     @media screen and (min-width: $large) {
       height: 20rem;
     }
@@ -270,8 +280,4 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-.daily:hover {
-  color: white;
 }

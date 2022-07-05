@@ -46,6 +46,10 @@ body {
   }
 }
 
+.active {
+  color: white;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -172,7 +176,8 @@ body {
 }
 .box--profile .box__footer .period {
   color: hsl(235deg, 45%, 61%);
-  padding-left: 1rem;
+  padding-left: 5rem;
+  cursor: pointer;
 }
 @media screen and (min-width: 1199.98px) {
   .box--profile .box__footer .period {
@@ -241,6 +246,9 @@ body {
   z-index: 1;
   border-radius: 15px;
 }
+.box--feature .box__body--children:hover {
+  background-color: hsl(235deg, 45%, 61%);
+}
 @media screen and (min-width: 1199.98px) {
   .box--feature .box__body--children {
     height: 20rem;
@@ -307,10 +315,6 @@ body {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
-}
-
-.daily:hover {
-  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
