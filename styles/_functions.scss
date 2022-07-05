@@ -16,14 +16,23 @@
   flex-direction: $direction;
 }
 
-@mixin flexSpaceBetween {
+@mixin flexSpaceBetween($direction) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: $direction;
 }
 
-@mixin flexSpaceEvenly {
+@mixin flexSpaceEvenly($direction) {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flexSpaceAround($direction) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: $direction;
 }
