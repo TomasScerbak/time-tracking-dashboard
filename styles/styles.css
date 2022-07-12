@@ -184,6 +184,9 @@ body {
 .box--profile .box__footer .period:hover {
   color: white;
 }
+.box--profile .box__footer .period:visited {
+  color: white;
+}
 @media screen and (min-width: 1199.98px) {
   .box--profile .box__footer .period {
     margin-bottom: 2.1rem;
