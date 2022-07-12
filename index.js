@@ -53,6 +53,8 @@ daily.addEventListener("click", () => {
     })
     .then((jsondata) => {
       daily.classList.add("active");
+      weekly.classList.remove("active");
+      monthly.classList.remove("active");
 
       workHours.innerHTML = `${jsondata[0].timeframes.daily.current}hrs`;
       workHoursPrevious.innerHTML = `Last week - ${jsondata[0].timeframes.daily.previous}hrs`;
@@ -81,6 +83,10 @@ weekly.addEventListener("click", () => {
       return response.json();
     })
     .then((jsondata) => {
+      daily.classList.remove("active");
+      monthly.classList.remove("active");
+      weekly.classList.add("active");
+
       workHours.innerHTML = `${jsondata[0].timeframes.weekly.current}hrs`;
       workHoursPrevious.innerHTML = `Last week - ${jsondata[0].timeframes.weekly.previous}hrs`;
 
@@ -108,6 +114,10 @@ monthly.addEventListener("click", () => {
       return response.json();
     })
     .then((jsondata) => {
+      daily.classList.remove("active");
+      monthly.classList.add("active");
+      weekly.classList.remove("active");
+
       workHours.innerHTML = `${jsondata[0].timeframes.monthly.current}hrs`;
       workHoursPrevious.innerHTML = `Last week - ${jsondata[0].timeframes.monthly.previous}hrs`;
 
