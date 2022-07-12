@@ -179,8 +179,10 @@ body {
 }
 .box--profile .box__footer .period {
   color: hsl(235deg, 45%, 61%);
-  padding-left: 5rem;
   cursor: pointer;
+}
+.box--profile .box__footer .period:hover {
+  color: white;
 }
 @media screen and (min-width: 1199.98px) {
   .box--profile .box__footer .period {

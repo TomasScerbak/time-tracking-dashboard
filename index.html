@@ -29,9 +29,9 @@
               </div>
             </div>
             <div class="box__footer">
-              <div class="period">Daily</div>
-              <div class="period">Weekly</div>
-              <div class="period">Monthly</div>
+              <div class="period daily">Daily</div>
+              <div class="period weekly">Weekly</div>
+              <div class="period monthly">Monthly</div>
             </div>
           </div>
           <div class="box box--feature">
@@ -44,8 +44,8 @@
                 <img class="settings" src="images/icon-ellipsis.svg" alt="#" />
               </div>
               <div class="box__right">
-                <p class="hours">32hrs</p>
-                <div class="last__week">Last week - 7hrs</div>
+                <p id="work__hours" class="hours"></p>
+                <div id="work__hours-previous" class="last__week"></div>
               </div>
             </div>
           </div>
@@ -55,12 +55,12 @@
             </div>
             <div class="box__body--children">
               <div class="box__left">
-                <h2 class="type">Work</h2>
+                <h2 class="type">Play</h2>
                 <img class="settings" src="images/icon-ellipsis.svg" alt="#" />
               </div>
               <div class="box__right">
-                <p class="hours">32hrs</p>
-                <div class="last__week">Last week - 7hrs</div>
+                <p id="play__hours" class="hours"></p>
+                <div id="play__hours-previous" class="last__week"></div>
               </div>
             </div>
           </div>
@@ -70,12 +70,12 @@
             </div>
             <div class="box__body--children">
               <div class="box__left">
-                <h2 class="type">Work</h2>
+                <h2 class="type">Study</h2>
                 <img class="settings" src="images/icon-ellipsis.svg" alt="#" />
               </div>
               <div class="box__right">
-                <p class="hours">32hrs</p>
-                <div class="last__week">Last week - 7hrs</div>
+                <p id="study__hours" class="hours"></p>
+                <div id="study__hours-previous" class="last__week"></div>
               </div>
             </div>
           </div>
@@ -85,12 +85,12 @@
             </div>
             <div class="box__body--children">
               <div class="box__left">
-                <h2 class="type">Work</h2>
+                <h2 class="type">Exercise</h2>
                 <img class="settings" src="images/icon-ellipsis.svg" alt="#" />
               </div>
               <div class="box__right">
-                <p class="hours">32hrs</p>
-                <div class="last__week">Last week - 7hrs</div>
+                <p id="exercise__hours" class="hours"></p>
+                <div id="exercise__hours-previous" class="last__week"></div>
               </div>
             </div>
           </div>
@@ -100,12 +100,12 @@
             </div>
             <div class="box__body--children">
               <div class="box__left">
-                <h2 class="type">Work</h2>
+                <h2 class="type">Social</h2>
                 <img class="settings" src="images/icon-ellipsis.svg" alt="#" />
               </div>
               <div class="box__right">
-                <p class="hours">32hrs</p>
-                <div class="last__week">Last week - 7hrs</div>
+                <p id="social__hours" class="hours"></p>
+                <div id="social__hours-previous" class="last__week"></div>
               </div>
             </div>
           </div>
@@ -123,8 +123,8 @@
                 <img class="settings" src="images/icon-ellipsis.svg" alt="#" />
               </div>
               <div class="box__right">
-                <p class="hours">32hrs</p>
-                <div class="last__week">Last week - 7hrs</div>
+                <p id="self__hours" class="hours"></p>
+                <div id="self__hours-previous" class="last__week"></div>
               </div>
             </div>
           </div>
@@ -137,6 +137,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Tomas Scerbak</a>.
     </div>
+    <script src="data.json"></script>
     <script src="index.js"></script>
   </body>
 </html>

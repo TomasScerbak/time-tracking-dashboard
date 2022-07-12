@@ -146,8 +146,11 @@ body {
 
     .period {
       color: $desaturated-blue;
-      padding-left: 5rem;
       cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
 
       @media screen and (min-width: $large) {
         margin-bottom: 2.1rem;
