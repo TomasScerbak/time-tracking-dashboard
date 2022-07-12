@@ -52,6 +52,8 @@ daily.addEventListener("click", () => {
       return response.json();
     })
     .then((jsondata) => {
+      daily.classList.add("active");
+
       workHours.innerHTML = `${jsondata[0].timeframes.daily.current}hrs`;
       workHoursPrevious.innerHTML = `Last week - ${jsondata[0].timeframes.daily.previous}hrs`;
 
