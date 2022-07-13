@@ -21,7 +21,7 @@ const weekly = document.querySelector(".weekly");
 const monthly = document.querySelector(".monthly");
 
 // Fetching data.json and loading data on page load
-fetch("/data.json")
+fetch("data.json")
   .then((response) => {
     return response.json();
   })
@@ -47,7 +47,7 @@ fetch("/data.json")
 
 // loading data for daily activities
 daily.addEventListener("click", () => {
-  fetch("/data.json")
+  fetch("data.json")
     .then((response) => {
       return response.json();
     })
@@ -78,7 +78,7 @@ daily.addEventListener("click", () => {
 
 // loading data for weekly activities
 weekly.addEventListener("click", () => {
-  fetch("/data.json")
+  fetch("data.json")
     .then((response) => {
       return response.json();
     })
@@ -109,7 +109,7 @@ weekly.addEventListener("click", () => {
 
 // loading data for monthly activities
 monthly.addEventListener("click", () => {
-  fetch("/data.json")
+  fetch("data.json")
     .then((response) => {
       return response.json();
     })
