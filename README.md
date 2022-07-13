@@ -32,8 +32,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/TomasScerbak/time-tracking-dashboard.git)
-- Live Site URL: [Add live site URL here](https://tomasscerbak.github.io/time-tracking-dashboard/)
+- Solution URL: [https://github.com/TomasScerbak/time-tracking-dashboard.git]
+- Live Site URL: [https://tomasscerbak.github.io/time-tracking-dashboard/]
 
 ## My process
 
